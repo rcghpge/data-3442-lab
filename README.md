@@ -9,6 +9,9 @@ Labs section of the course.
 There are several methods to setup your initial R environment. You can run R in a GUI via RStudio, VS Code, a Jupyter notebook via a web browser, or on the command line in Bash. For beginner-friendly RStudio, VS Code, or Jupyter notebooks is recommended.
 
 ---
+## Getting Started in Bash
+To get started see Github documentation to install this repository into your local machine: [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?platform=linux&tool=webui)
+
 ## Bash Development Workflow
 Install R:
 ```bash
