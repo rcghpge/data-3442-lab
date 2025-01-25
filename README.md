@@ -32,7 +32,7 @@ Rscript hello.R
 # Resources and Documentation
 - [Visual Studio Code](https://code.visualstudio.com): VS Code Interactive Development Environment
 - [RStudio](https://posit.co/downloads/): RStudio Interactive Development Environment
-- [Jupyter Notebooks](https://github.com/jupyter/notebook): Jupyter Interactive Notebooks. To work in R in a Jupyter Notebooks environment you will need to install the R kernel. See R kernel link. RStudio and VS Code may have a more seamless installation. Resources are listed for preference
+- [Jupyter Notebooks](https://github.com/jupyter/notebook): Jupyter Interactive Notebooks. To work with R in Jupyter Notebooks, install the R kernel provided in the links. Alternatively RStudio or VS Code may offer a more seamless setup 
 - [R](https://www.r-project.org): About The R Project
 - [R kernel](https://github.com/IRkernel/IRkernel): The R kernel for workflows and development in Jupyter-based enviornments. 
 - [The R programming language](https://www.r-project.org/other-docs.html): Documentation
