@@ -1,0 +1,3 @@
+# R env local ignores
+.~lock.*#
+
