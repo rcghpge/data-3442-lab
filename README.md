@@ -9,7 +9,7 @@ Labs section of the course.
 There are several methods to setup your intial R environment. You can run R in a GUI via RStudio, VS Code, or on the command line in Bash. For beginner-friendly RStudio and VS Code is recommended.
 
 ---
-## Bash Workflow
+## Bash Development Workflow
 Install R:
 ```bash
 sudo apt install r-base
