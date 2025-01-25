@@ -251,8 +251,8 @@ cat("\n")
 
 # Part c.)
 
-# Conclusion: The 2008 tuition model is the better choice due to its higher explanatory power R^2 --- relevance of data 
-# (closer in time to 2014), and likely better predictive performance. While the Y2000 model is valid, it is less reliable for 
+# Conclusion: The Y2008 tuition model is the better choice due to its higher explanatory power R^2 relevance of data - is closer 
+# in time to Y2014, and likely has better predictive performance. While Y2000 model is valid, it is less reliable for 
 # making inferences about Y2014 tuition due to the longer time gap and lower predictive strength.
 
 
