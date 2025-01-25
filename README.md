@@ -5,7 +5,7 @@ Statistical Methods for Data Science 2 @ UTA. Dr. Bian. Spring 2025
 ## Lab
 Labs section of the course.
 
-## Setup Instructions
+## Development Environment Setup
 There are several methods to setup your intial R environment. You can run R in a GUI via RStudio, VS Code, or on the command line in Bash. For beginner-friendly RStudio and VS Code is recommended.
 
 ---
