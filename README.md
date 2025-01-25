@@ -10,7 +10,7 @@ There are several methods to setup your initial R environment. You can run R in 
 
 ---
 ## Getting Started in Bash
-To get started see Github documentation to install this repository into your local machine: [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?platform=linux&tool=webui)
+To get a workflow and development started in bash see Github documentation to install this repository into your local machine: [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?platform=linux&tool=webui)
 
 ## Bash Development Workflow
 Install R:
