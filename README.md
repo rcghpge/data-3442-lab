@@ -22,7 +22,10 @@ R
 
 Alternatively you can run an R workflow environment directly in Bash with the following commands:
 ```bash
+# Create an R script
 nano hello.R
+
+# Run R script
 Rscript hello.R
 ```
 
