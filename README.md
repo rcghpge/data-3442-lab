@@ -1,5 +1,5 @@
-# Statistical Methods for Data Science 2
-Statistical Methods for Data Science 2 @ UTA. Dr. Bian. Spring 2025
+# Statistical Methods for Data Science 2 in R
+Statistical Methods for Data Science 2 in R @ UTA. Dr. Bian. Spring 2025
 
 ---
 ## Lab
