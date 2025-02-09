@@ -1,0 +1,220 @@
+Descriptive Statistics (summary function):
+      gpa             hsm              hss              hse        
+ Min.   :0.120   Min.   : 2.000   Min.   : 3.000   Min.   : 3.000  
+ 1st Qu.:2.167   1st Qu.: 7.000   1st Qu.: 7.000   1st Qu.: 7.000  
+ Median :2.740   Median : 9.000   Median : 8.000   Median : 8.000  
+ Mean   :2.635   Mean   : 8.321   Mean   : 8.089   Mean   : 8.094  
+ 3rd Qu.:3.212   3rd Qu.:10.000   3rd Qu.:10.000   3rd Qu.: 9.000  
+ Max.   :4.000   Max.   :10.000   Max.   :10.000   Max.   :10.000  
+      satm            satv      
+ Min.   :300.0   Min.   :285.0  
+ 1st Qu.:540.0   1st Qu.:440.0  
+ Median :600.0   Median :490.0  
+ Mean   :595.3   Mean   :504.5  
+ 3rd Qu.:650.0   3rd Qu.:570.0  
+ Max.   :800.0   Max.   :760.0  
+
+
+Descriptive Statistics (psych package):
+     vars   n   mean    sd median trimmed   mad    min max  range  skew
+gpa     1 224   2.64  0.78   2.74    2.69  0.78   0.12   4   3.88 -0.68
+hsm     2 224   8.32  1.64   9.00    8.52  1.48   2.00  10   8.00 -0.98
+hss     3 224   8.09  1.70   8.00    8.26  1.48   3.00  10   7.00 -0.63
+hse     4 224   8.09  1.51   8.00    8.21  1.48   3.00  10   7.00 -0.60
+satm    5 224 595.29 86.40 600.00  595.86 81.54 300.00 800 500.00 -0.18
+satv    6 224 504.55 92.61 490.00  502.16 88.96 285.00 760 475.00  0.25
+     kurtosis   se
+gpa      0.30 0.05
+hsm      0.60 0.11
+hss     -0.43 0.11
+hse     -0.05 0.10
+satm    -0.02 5.77
+satv    -0.03 6.19
+
+
+Descriptive Statistics (pastecs package):
+                      gpa          hsm          hss         hse         satm
+nbr.val      224.00000000  224.0000000  224.0000000  224.000000 2.240000e+02
+nbr.null       0.00000000    0.0000000    0.0000000    0.000000 0.000000e+00
+nbr.na         0.00000000    0.0000000    0.0000000    0.000000 0.000000e+00
+min            0.12000000    2.0000000    3.0000000    3.000000 3.000000e+02
+max            4.00000000   10.0000000   10.0000000   10.000000 8.000000e+02
+range          3.88000000    8.0000000    7.0000000    7.000000 5.000000e+02
+sum          590.29000000 1864.0000000 1812.0000000 1813.000000 1.333440e+05
+median         2.74000000    9.0000000    8.0000000    8.000000 6.000000e+02
+mean           2.63522321    8.3214286    8.0892857    8.093750 5.952857e+02
+SE.mean        0.05207551    0.1094927    0.1135635    0.100749 5.772939e+00
+CI.mean.0.95   0.10262308    0.2157728    0.2237949    0.198542 1.137649e+01
+var            0.60745645    2.6854580    2.8888533    2.273683 7.465209e+03
+std.dev        0.77939493    1.6387367    1.6996627    1.507874 8.640144e+01
+coef.var       0.29576050    0.1969297    0.2101128    0.186301 1.451428e-01
+                     satv
+nbr.val      2.240000e+02
+nbr.null     0.000000e+00
+nbr.na       0.000000e+00
+min          2.850000e+02
+max          7.600000e+02
+range        4.750000e+02
+sum          1.130190e+05
+median       4.900000e+02
+mean         5.045491e+02
+SE.mean      6.187797e+00
+CI.mean.0.95 1.219404e+01
+var          8.576697e+03
+std.dev      9.261046e+01
+coef.var     1.835509e-01
+
+
+High School Model Summary:
+
+Call:
+lm(formula = gpa ~ hsm + hss + hse, data = gpa_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.12892 -0.34072  0.07568  0.47445  1.75365 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.58988    0.29424   2.005   0.0462 *  
+hsm          0.16857    0.03549   4.749 3.68e-06 ***
+hss          0.03432    0.03756   0.914   0.3619    
+hse          0.04510    0.03870   1.166   0.2451    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6998 on 220 degrees of freedom
+Multiple R-squared:  0.2046,	Adjusted R-squared:  0.1937 
+F-statistic: 18.86 on 3 and 220 DF,  p-value: 6.359e-11
+
+
+
+SAT Model Summary:
+
+Call:
+lm(formula = gpa ~ satm + satv, data = gpa_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.59483 -0.37920  0.08263  0.55730  1.39931 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.289e+00  3.760e-01   3.427 0.000728 ***
+satm         2.283e-03  6.629e-04   3.444 0.000687 ***
+satv        -2.456e-05  6.185e-04  -0.040 0.968357    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7577 on 221 degrees of freedom
+Multiple R-squared:  0.06337,	Adjusted R-squared:  0.05489 
+F-statistic: 7.476 on 2 and 221 DF,  p-value: 0.0007218
+
+
+
+Full Model Summary:
+
+Call:
+lm(formula = gpa ~ hsm + hss + hse + satm + satv, data = gpa_data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.06493 -0.30843  0.06894  0.48760  1.70543 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.3267187  0.3999964   0.817 0.414932    
+hsm          0.1459611  0.0392610   3.718 0.000256 ***
+hss          0.0359053  0.0377984   0.950 0.343207    
+hse          0.0552926  0.0395687   1.397 0.163719    
+satm         0.0009436  0.0006857   1.376 0.170176    
+satv        -0.0004078  0.0005919  -0.689 0.491518    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7 on 218 degrees of freedom
+Multiple R-squared:  0.2115,	Adjusted R-squared:  0.1934 
+F-statistic: 11.69 on 5 and 218 DF,  p-value: 5.058e-10
+
+
+
+ANOVA: High School vs Full Model:
+Analysis of Variance Table
+
+Model 1: gpa ~ hsm + hss + hse
+Model 2: gpa ~ hsm + hss + hse + satm + satv
+  Res.Df    RSS Df Sum of Sq      F Pr(>F)
+1    220 107.75                           
+2    218 106.82  2   0.93131 0.9503 0.3882
+
+
+ANOVA: SAT vs Full Model:
+Analysis of Variance Table
+
+Model 1: gpa ~ satm + satv
+Model 2: gpa ~ hsm + hss + hse + satm + satv
+  Res.Df    RSS Df Sum of Sq      F    Pr(>F)    
+1    221 126.88                                  
+2    218 106.82  3     20.06 13.646 3.432e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+ANOVA: Final Model vs SAT Stepwise Test Model:
+Analysis of Variance Table
+
+Model 1: gpa ~ hsm + hse
+Model 2: gpa ~ hsm + hse + satv + satm
+  Res.Df    RSS Df Sum of Sq      F Pr(>F)
+1    221 108.16                           
+2    219 107.26  2   0.89801 0.9168 0.4013
+
+
+Variance Inflation Factor (VIF):
+     hsm      hss      hse     satm     satv 
+1.883878 1.878386 1.620114 1.597234 1.367472 
+
+
+Stepwise Regression Summary:
+
+Call:
+lm(formula = gpa ~ hsm + hse, data = gpa_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0588 -0.3883  0.0695  0.4687  1.7332 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.62423    0.29172   2.140   0.0335 *  
+hsm          0.18265    0.03196   5.716 3.51e-08 ***
+hse          0.06067    0.03473   1.747   0.0820 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6996 on 221 degrees of freedom
+Multiple R-squared:  0.2016,	Adjusted R-squared:  0.1943 
+F-statistic: 27.89 on 2 and 221 DF,  p-value: 1.577e-11
+
+
+
+Final Regression Model Summary (further modeling can be done):
+Call:
+lm(formula = gpa ~ hsm + hse, data = gpa_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.0588 -0.3883  0.0695  0.4687  1.7332 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  0.62423    0.29172   2.140   0.0335 *  
+hsm          0.18265    0.03196   5.716 3.51e-08 ***
+hse          0.06067    0.03473   1.747   0.0820 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.6996 on 221 degrees of freedom
+Multiple R-squared:  0.2016,	Adjusted R-squared:  0.1943 
+F-statistic: 27.89 on 2 and 221 DF,  p-value: 1.577e-11
+
