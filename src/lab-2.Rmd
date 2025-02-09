@@ -30,7 +30,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ### This report analyzes the relationship of high school education, SAT scores, and its effects in predicting cumulative GPA.
 #### Run code blocks for inference and analyis of this study.
 
-## Statistical Regreesion Methods: Data Summary
+## Statistical Regression Methods: Data Summary
 ### Summary of Descriptive Statistics
 ```{r}
 summary(gpa_data)
