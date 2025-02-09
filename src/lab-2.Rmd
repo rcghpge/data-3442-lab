@@ -139,7 +139,7 @@ The final regression model summary is provided. See `analysis_results` and pdf f
 This conclusion is based on robust statistical evidence from multiple regression models, hypothesis testing, and model selection methods, reinforcing its validity and reliability.
 
 ### Render R Markdown to documentation file format(s)
-To render the lab report run the R code snippet below in R console. File output format for documentation can be changed.See link for more information: https://pkgs.rstudio.com/rmarkdown/reference/render.html
+To render the lab report the .Rmd R Markdown file must be rendered via R console. File output format for documentation can be changed.See link for more information: https://pkgs.rstudio.com/rmarkdown/reference/render.html
 
 ### Final Thoughts
 R has Linux functionality and fragmentation issues in its stack. This lab was completed on RStudio GUI due to technical difficulties on a another machine on Linux in Bash. With that said, R seems to be a very robust programming language.
