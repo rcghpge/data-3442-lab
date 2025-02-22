@@ -103,6 +103,7 @@ We conclude that based on this statistical analysis and report that there is a d
 The F-test statistic in a One-way ANOVA is used to determine whether there are significant differences among the means of multiple groups (golf ball brands). A large F-statistic indicates that the variance between the group means is significantly larger than the variance within the groups.
 
 * If the F-statistic is large, it suggests that at least one golf brand has a significantly different mean distance compared to others.
+
 * If the F-statistic is small, it means that the differences between the group means are likely due to random variation rather than a true effect.
 
 2. Can you interpret the p-value associated with the F-test in the context of One-way ANOVA? What conclusions can be drawn based on its value?
