@@ -84,9 +84,12 @@ ggqqplot(golf_data, x = "dist", facet.by = "brand", title = "Q-Q Plots for Golf 
 The **ANOVA test** results show a significant F-statistic - 43.99 at F(3, 36) with a p-value of $3.97 \times 10^{-12}$ = 0.00000000000397 (close to 0 and less than an alpha value of 0.05), indicating differences in mean distances among brands. The **Tukey’s HSD test** reveals specific pairwise differences where Brand C has the largest mean difference among the brands.
 
 Key findings:
+
 * Brand C has the highest mean distance.
+
 * Brand D has the lowest mean distance.
-* Significant differences exist between some brands (based on results and conclusive F-statistic and p-value.
+
+* Significant differences exist between some brands (based on results and conclusive F-statistic and p-value).
 
 ## Conclusion
 
