@@ -110,6 +110,24 @@ plot2 <- ggplot(means_plants2, aes(x = as.numeric(as.character(water)), y = mean
 ggsave("plants2-mean.pdf", plot = plot2, width = 8, height = 6)
 
 # ============================================================
+# Mean Plot for PLANTS2 Data (Dry Biomass)
+# ============================================================
+
+means_plants2_dry <- plants2 %>%
+  group_by(species, water) %>%
+  summarise(mean_dbiomass = mean(dbiomass, na.rm = TRUE), .groups = 'drop')
+
+plot3 <- ggplot(means_plants2_dry, aes(x = as.numeric(as.character(water)), y = mean_dbiomass, color = species)) +
+  geom_line() + geom_point() +
+  labs(title = "Mean Dry Biomass by Water Level and Species",
+       x = "Water Level (mm)",
+       y = "Mean Dry Biomass") +
+  theme_minimal()
+
+# Save the plot
+ggsave("plants2-mean2.pdf", plot = plot3, width = 8, height = 6)
+
+# ============================================================
 # Exercise 13.52 - ANOVA for Fresh and Dry Biomass
 # ============================================================
 
