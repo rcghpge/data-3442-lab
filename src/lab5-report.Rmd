@@ -1,0 +1,156 @@
+
+---
+title: "<span style='font-size:27px'>The University of Texas at Arlington</span>"
+subtitle: "<span style='font-size:20px'>Lab 5 - High School Education Study: Logistic Regression Lab Report</span>"
+author: "Robert Cocker"
+date: "March 28, 2025"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Questions:
+#### **14.47 - Predicting High GPA Using High School Grades**
+#### Model 1: HIGPA ~ HSM + HSS + HSE
+
+#### (1) Hypothesis Test for All Three Predictors
+The null hypothesis H0 is that all three coefficients (HSM, HSS, HSE) are zero. The HA alternative hypothesis is that all coefficients or at least 1 is not. 
+
+From the model:
+
+- HSM: p = 0.3543  
+- HSS: p = 0.0338 *  
+- HSE: p = 0.3539  
+
+Only **HSS (High School Science)** is statistically significant. We reject the null hypothesis for HSS.
+
+#### (2) Coefficients and 95% Confidence Intervals
+
+- HSM: 95% CI = [-0.1891, 0.5281]  
+- HSS: 95% CI = [0.0381, 0.9845]  
+- HSE: 95% CI = [-0.2143, 0.5993]
+
+#### (3) Conclusion
+
+Only **science grades (HSS)** are significantly predictive of college GPA.
+
+---
+
+#### **14.48 - Predicting High GPA Using SAT Scores**
+#### Model 2: HIGPA ~ SATM + SATCR
+
+#### (1) Hypothesis Test
+The null hypothesis H0 is that SATM and SATCR are zero. The HA alternative hypothesis is that all coefficients or at least 1 is not.
+
+From Model 2:
+
+- SATM: p = 0.00137 **  
+- SATCR: p = 0.91236
+
+Only **SATM** (SAT Math) is significant. We reject the null hypothesis H0. SAT Comprehension and Reading is not statistically significant in this model. SAT Math however is.
+
+#### (2) Confidence Intervals
+
+- SATM: 95% CI = [0.0037, 0.0155]  
+- SATCR: 95% CI = [-0.0050, 0.0045]
+
+#### (3) Conclusion
+
+**SAT Math** is a significant predictor. **SATCR** (SAT Comprehension and Reading) is not.
+
+---
+
+#### **14.49 - Combined Model: HS Grades and SAT Scores**
+#### Model 3: HIGPA ~ HSM + HSS + HSE + SATM + SATCR
+
+#### (1) HS Grades by Subject
+The null hypothesis H0 is that all three coefficients (HSM, HSS, HSE) are zero. The HA alternative hypothesis is that all coefficients or at least 1 is not.
+
+From Model 3:
+
+- HSM: p = 0.96044  
+- HSS: p = 0.02945 *  
+- HSE: p = 0.20765
+
+#### (2) SAT Scores
+The null hypothesis H0 is that both coefficients SATM and SATCR are equal to zero. The HA alternative hypothesis is that all coefficients or at least 1 is not.
+
+From Model 3:
+
+- SATM: p = 0.00391 **  
+- SATCR: p = 0.36158
+
+#### (3) Conclusion
+
+**HSS** (High School Science) and **SATM** (SAT Math) are significant predictors in the combined model. We reject H0 in both hypothesis tests.
+
+---
+
+#### **14.50 - Effect of Gender (sex) on HIGPA**
+#### Model 4: HIGPA ~ sex + SATM + SATCR
+
+#### (1) Model 4 gender `sex`
+Subset of model 4 tested: HIGPA ~ sex
+
+The null hypothesis H0 here is that gender is zero (gender is not statistically significan and does not robustly predict high GPA score). The HA alternative hypothesis is that coefficient for gender is not equal to zero and is statistically significant indicating and effect on predicting high school GPA scores.
+
+From subset of Model 4:
+
+- sex: p = 0.334 (Not significant)
+
+We fail to reject the null hypothesis H0.
+
+#### (2) Model with `sex + SATM + SATCR`
+The null hypothesis H0 is that all coefficients sex, SATM, and SATCR are equal to zero. The HA alternative hypothesis is that all coefficients or at least 1 is not.
+
+From Model 4:
+
+- sex: p = 0.00367 **  
+- SATM: p = 6.41e-05 ***  
+- SATCR: p = 0.63516
+
+#### (3) Conclusion
+
+Gender becomes significant after adjusting for SAT scores. So in the first subset testing of Model 4, model 4a, gender is not significant in predicting GPA scores. In the second test of full model, gender does become statistically significant in predicting high school GPA scores. We do not reject the null hypothesis H0 in the first test, but in the full model 4 test we reject H0. There is statistical significance that gender has an effect on high school GPA predictions when SAT scores are factored in.
+
+---
+
+### Final Thoughts
+The STEM field is a very broad field for education, research, innovation, discovery, and a life-long rewarding journey. This study provides a benchmark approach of statistical methods in analysis of high school education both stateside and abroad. I believe this does not fully tell the story of an individual in that other factors play a large role in a high school student's educational, but more importantly life-long success. These factors include socioeconomics, cultural background and values, their environment, and more. Further analyses in this subject is needed for building an educational system that fosters core values, both life-skills and sharp technical skills, talent, and true potential.
+
+---
+
+### Appendix: How to Generate the Lab Report
+
+#### Option 1: Using RStudio (Recommended)
+1. Open `lab5-report.Rmd` in RStudio.
+2. Click the **Knit** button at the top toolbar.
+3. Select your output format: HTML, PDF, or Word.
+4. The knitted document will be generated in the same folder.
+
+#### Option 2: Using R Console
+
+If you're not using RStudio or prefer the command line, run:
+
+```r
+# Make sure you have rmarkdown installed
+install.packages("rmarkdown")
+
+# Render the report
+rmarkdown::render("C:/Users/user/Desktop/lab5/lab5-report.Rmd")
+```
+
+This will create an HTML report from your R Markdown file in the same folder.
+
+### References
+#### 1. Google
+Google is a multinational technology company specializing in internet-related services and products. [https://www.google.com](https://www.google.com)
+
+#### 2. ChatGPT
+ChatGPT is an AI language model developed by OpenAI, designed to assist with a variety of tasks through natural language processing. [https://openai.com/chatgpt](https://openai.com/chatgpt)
+
+#### 3. The University of Texas at Arlington
+Course materials provided by the University of Texas at Arlington, including lectures, labs, and other resources, have been instrumental in this work. [https://www.uta.edu/academics/courses-and-schedules](https://www.uta.edu/academics/courses-and-schedules)
+
